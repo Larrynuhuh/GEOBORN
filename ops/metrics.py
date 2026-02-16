@@ -7,6 +7,7 @@ def linlen(l):
 
     return sums
 
+
 def midp(p1, p2):
     mid = (p1 + p2) / 2.0
     return mid
