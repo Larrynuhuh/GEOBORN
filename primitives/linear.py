@@ -2,11 +2,11 @@ import jax
 import jax.numpy as jnp
 
 @jax.jit
-def points(x, y):
+def points(*dimens):
 
-    u, v = jnp.meshgrid(x, y)
-    p = jnp.stack([u,v], axis = -1)
-    c = p.reshape(-1, 2)
+    state = jnp.meshgrid(*dimens, indexing = 'ij')
+    p = jnp.stack(state, axis = -1)
+    c = p.reshape(-1, len(dimens))
 
     return c
 
