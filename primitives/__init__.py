@@ -1,1 +1,1 @@
-from .linear import points, line
+from .linear import (points, line, vline, bounds)

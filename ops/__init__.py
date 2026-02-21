@@ -1,1 +1,2 @@
-from .metrics import line_len, midp, vmidp, pldist, vpldist
+from .metrics import (line_len, midp, vmidp, pldist, vpldist, normal, vnormal
+)
